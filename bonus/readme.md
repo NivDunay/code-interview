@@ -1,6 +1,6 @@
 
 
-## Part Bonus
+## Bonus Part
 Before moving forward, let's just make sure - did you finish part A? Did you go over it with your interviewer? Good job :)
 
 ### Pubsub system
@@ -66,7 +66,7 @@ For this part, as we said before, assume providers are identified by their name,
 2. Subscribe to the channel called ‘addProvider’. The messages on this channel have a payload that’s a provider according to the object model described above. Your server should receive updates on this channel and add/update your data model according to the changes received.
 3. Subscribe to the channel called ‘deleteProvider’. The messages on this channel have a payload that looks like this: `{“name”: string}`. Your server should delete the provider according to the deletions received.
 
-###  Part bonus 2 (Not ordered by priority, feel free to choose)
+### Bonus Part 2 (Not ordered by priority, feel free to choose)
 - Create a simple web interface that allows searching for providers and setting appointments according to part A.
 - Create a simple web interface that allows creating/updating/deleting providers’ information according to part B.
 - We’re interested in analytics - your CTO wrote a service that subscribes to the pubsub system on the channel “analytics”. Design and implement messages on this channel that would support:
