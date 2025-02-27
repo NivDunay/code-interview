@@ -2,10 +2,10 @@ const assert = require('assert');
 const request = require('request-promise');
 const config = require('../config');
 
-describe(`# Test part A of the coding interview`, () => {
+describe(`# Test part A of the coding interview!`, () => {
     const restUrl = `http://localhost:${config.REST_PORT}`;
     const pubsubUrl = `http://localhost:${config.PUBSUB_PORT}`;
-
+    
     function getAppointments(specialty, date, minScore) {
         return request({
             uri: `${restUrl}/appointments`,
